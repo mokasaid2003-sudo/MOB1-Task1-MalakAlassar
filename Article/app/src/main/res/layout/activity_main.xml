@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- صورة غلاف المقال -->
+
+        <!-- عنوان المقال الرئيسي -->
+
+        <ImageView
+            android:id="@+id/articleImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:contentDescription="Article Header Image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img" />
+
+        <TextView
+            android:id="@+id/articleTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Jetpack Compose tutorial"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="?android:attr/textColorPrimary" />
+
+        <!-- الفقرة التمهيدية -->
+        <TextView
+            android:id="@+id/articleShortDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Jetpack Compose is a modern toolkit for building native Android UI. Compose simplifies and accelerates UI development on Android with less code, powerful tools, and intuitive Kotlin APIs."
+            android:textSize="14sp"
+            android:textColor="?android:attr/textColorSecondary" />
+
+        <!-- نص المقال الرئيسي -->
+        <TextView
+            android:id="@+id/articleLongDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="In this tutorial, you build a simple UI component with declarative functions. You call Compose functions to define what data you want to see and the UI widgets you want to build, rather than focusing on the process of constructing the UI."
+            android:textSize="14sp"
+            android:textColor="?android:attr/textColorPrimary" />
+
+    </LinearLayout>
+</ScrollView>
